@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curtians Video</title>
+    <!-- Css only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="my-style.css">
+    <script src="https://kit.fontawesome.com/8f40ed90f8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .fa {
+          font-size: 50px;
+          cursor: pointer;
+          user-select: none;
+        }
+        
+        .fa:hover {
+          color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <video width="1920" height="1080" controls autoplay loop muted>
+        <source src="videos\curtains.mp4" type="video/mp4">
+    </video>
+    <input type="text" id="comment-box" placeholder="Enter Comment">
+    <button id="post">Post</button>
+    <ul id="unordered">
+    </ul>
+
+    <script>
+        var post= document.getElementById("post");
+        post.addEventListener("click",function(){
+            var commentBoxValue=document.getElementById("comment-box").value;
+
+            var li = document.createElement("li");
+            var text = document.createTextNode(commentBoxValue);
+            li.appendChild(text);
+            document.getElementById("unordered").appendChild(li);
+        });
+    </script>
+</body>
+</html>
