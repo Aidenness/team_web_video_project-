@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Login</title>
     <!-- Css only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="my-style.css">
@@ -15,7 +15,7 @@
     <section class="showcase ">
         <header>
             <div class="logo">
-                <img src="images/logo.png" alt="">
+            <a href="index.html"><img src="images/logo2.png"></a>
             </div>
 
             <div class="dropdown">
@@ -32,14 +32,29 @@
             </header>
         
             <div class="video-container">
-            <video src="./videos/mixkit-group-of-friends-partying-happily-4640-medium.mp4" autoplay muted loop ></video>
+            <video src="./videos/happy.mp4" autoplay muted loop ></video>
         </div>
-        <div class="text">
-            <h1>Record the wonderful moment in your awesome life</h1>
-            <h2>Anything that you want</h2>
-            <a href="#">Swipe Now</a> <br>
-            <a href="video-one.html">Or Click Here for a Recommended Video</a>
-        </div>
+        <div id="login-box">
+            <div class="left">
+              <h1>Login</h1>
+              
+              <input type="text" name="username" placeholder="Username" />
+              <input type="password" name="password" placeholder="Password" />
+
+              
+              <a href="login-success.html" class="submit">Log In</a>
+            </div>
+            
+            <div class="right">
+              <span class="loginwith">Login with<br />social network</span>
+              
+              <input type="buttonfb"  onclick="location.href='login-success.html'" value="Login with Facebook" />
+              <input type="buttontw"  onclick="location.href='login-success.html'" value="Login with Twitter" />
+              <input type="buttongp"  onclick="location.href='login-success.html'" value="Login with Google+" />
+
+            </div>
+            <div class="or">OR</div>
+          </div>
         <div class="social">
             <a href="http://facebook.com"><i class="fa-brands fa-facebook"></i>
             <a href="http://youtube.com"><i class="fa-brands fa-youtube"></i>
