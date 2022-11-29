@@ -269,16 +269,19 @@ button.social-signin:active {
   transition: 0.2s ease;
 }
 
-button.social-signin.facebook {
+input[type="buttonfb"] {
   background: #32508E;
+  color: #FFF;
 }
 
-button.social-signin.twitter {
+input[type="buttontw"] {
   background: #55ACEE;
+  color: #FFF;
 }
 
-button.social-signin.google {
+input[type=buttongp] {
   background: #DD4B39;
+  color: #FFF;
 }
 /* end sign up page */
 
