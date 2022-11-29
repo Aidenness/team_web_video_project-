@@ -285,5 +285,27 @@ input[type=buttongp] {
 }
 /* end sign up page */
 
+/*like dislike button for videos */
+body{
+  margin: 40px;
+}
 
+button{
+  cursor: pointer;
+  outline: 0;
+  color: #AAA;
+
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.green{
+  color: green;
+}
+
+.red{
+  color: red;
+}
 

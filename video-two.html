@@ -19,6 +19,10 @@
     <button id="post">Post</button>
     <ul id="unordered">
     </ul>
+    <div>
+        <button class="btn" id="green"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i></button>
+        <button class="btn" id="red"><i class="fa fa-thumbs-down fa-lg" aria-hidden="true"></i></button>
+    </div>
     <a href="index.html">Click Here to return to the Homepage</a> <br>
     <a href="video-one.html">Or Click Here for a Recommended Video</a>
     <script>
@@ -31,6 +35,26 @@
             li.appendChild(text);
             document.getElementById("unordered").appendChild(li);
         });
+        var btn1 = document.querySelector('#green');
+        var btn2 = document.querySelector('#red');
+
+            btn1.addEventListener('click', function() {
+  
+             if (btn2.classList.contains('red')) {
+                btn2.classList.remove('red');
+            } 
+            this.classList.toggle('green');
+  
+        });
+
+        btn2.addEventListener('click', function() {
+  
+            if (btn1.classList.contains('green')) {
+            btn1.classList.remove('green');
+            } 
+        this.classList.toggle('red');
+  
+});
     </script>
 </body>
 </html>
