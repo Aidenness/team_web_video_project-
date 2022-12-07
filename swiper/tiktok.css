@@ -9,6 +9,15 @@
     background-color: rgb(0, 0, 0);
   }
   
+  .logo{
+    width: 30px;
+    cursor: pointer;
+    float: left;
+}
+
+  .logo image{
+    width: 20%;
+}
   .outer-wrap {
     position: relative;
   }
