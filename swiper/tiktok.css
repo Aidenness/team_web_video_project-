@@ -9,6 +9,17 @@
     background-color: rgb(0, 0, 0);
   }
   
+  .logo{
+    width: 30px;
+    cursor: pointer;
+    float: left;
+    z-index: 999;
+}
+
+  .logo image{
+    width: 20%;
+    z-index: 999;
+}
   .outer-wrap {
     position: relative;
   }
