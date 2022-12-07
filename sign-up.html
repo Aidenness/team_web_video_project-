@@ -35,27 +35,26 @@
             <video src="./videos/happy.mp4" autoplay muted loop ></video>
         </div>
         <div id="login-box">
-            <div class="left">
-              <h1>Sign up</h1>
-              
-              <input type="text" name="username" placeholder="Username" />
-              <input type="text" name="email" placeholder="E-mail" />
-              <input type="password" name="password" placeholder="Password" />
-              <input type="password" name="password2" placeholder="Retype password" />
-              
-              <a href="signup-success.html" class="submit">Sign Me Up</a>
-            </div>
+          <div class="left">
+            <h1>Sign up</h1>
             
-            <div class="right">
-              <span class="loginwith">Sign in with<br />social network</span>
-              
-              <input type="buttonfb"  onclick="location.href='signup-success.html'" value="Sign in with Facebook" />
-              <input type="buttontw"  onclick="location.href='signup-success.html'" value="Sign in with Twitter" />
-              <input type="buttongp"  onclick="location.href='signup-success.html'" value="Sign in with Google+" />
-
-            </div>
-            <div class="or">OR</div>
+            <input type="text" name="username" placeholder="Username" />
+            <input type="text" name="email" placeholder="E-mail" />
+            <input type="password" name="password" placeholder="Password" />
+            <input type="password" name="password2" placeholder="Retype password" />
+            
+            <input type="submit" name="signup_submit" value="Sign me up" />
           </div>
+          
+          <div class="right">
+            <span class="loginwith">Sign in with<br />social network</span>
+            
+            <button class="social-signin facebook"><a href="signup-success.html"style="color:white;">Log in with facebook</a></button>
+            <button class="social-signin twitter"><a href="signup-success.html"style="color:white;">Log in with Twitter</a></button>
+            <button class="social-signin google"><a href="signup-success.html"style="color:white;">Log in with Google+</a></button>
+          </div>
+          <div class="or">OR</div>
+        </div>
         <div class="social">
             <a href="http://facebook.com"><i class="fa-brands fa-facebook"></i>
             <a href="http://youtube.com"><i class="fa-brands fa-youtube"></i>

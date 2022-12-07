@@ -58,7 +58,7 @@ h2{
 .text a {
     display: inline-block;
     font-size: 1em;
-    background: #fff;
+    background: rgb(239, 181, 5);
     padding: 10px 30px;
     text-decoration: none;
     color: black;
@@ -138,7 +138,7 @@ body {
   margin: 5% auto;
   width: 600px;
   height: 400px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(9, 9, 9, 0.3);
   border-radius: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
@@ -153,11 +153,11 @@ body {
   height: 400px;
 }
 
-/* h1 {
+h1 {
   margin: 0 0 20px 0;
   font-weight: 300;
   font-size: 28px;
-} */
+}
 
 input[type="text"],
 input[type="password"] {
@@ -186,7 +186,7 @@ input[type="submit"] {
   margin-top: 28px;
   width: 120px;
   height: 32px;
-  background: rgb(0, 0, 0,0.6);
+  background: rgb(9, 9, 9, 0.6);
   border: none;
   border-radius: 2px;
   color: #FFF;
@@ -231,7 +231,7 @@ input[type="submit"]:active {
   padding: 40px;
   width: 300px;
   height: 400px;
-  background: rgb(0, 0, 0,0.2);
+  background: url('https://goo.gl/YbktSj');
   background-size: cover;
   background-position: center;
   border-radius: 0 2px 2px 0;
@@ -269,19 +269,16 @@ button.social-signin:active {
   transition: 0.2s ease;
 }
 
-input[type="buttonfb"] {
+button.social-signin.facebook {
   background: #32508E;
-  color: #FFF;
 }
 
-input[type="buttontw"] {
+button.social-signin.twitter {
   background: #55ACEE;
-  color: #FFF;
 }
 
-input[type=buttongp] {
+button.social-signin.google {
   background: #DD4B39;
-  color: #FFF;
 }
 /* end sign up page */
 
@@ -309,3 +306,10 @@ button{
   color: red;
 }
 
+.right a{
+  text-decoration: none;
+}
+
+.loginwith{
+  text-decoration: none;
+}
