@@ -10,68 +10,62 @@
   <title>Document</title>
 </head>
 <body>
-    <div class="logo">
-    <a href="index.html"><img src="images/logo.png"></a>
-    </div>
   <div class="outer-wrap">
+    <!-- logo -->
+    <a class="logo" href="index.html">
+      <img src="./images/logo.png">
+    </a>
     <div class="author">
-      <p>@Animal</p>
-      <p>Cute animal love love love</p>
-      <a href="index.html">back to home page </a>
-
+      <p>@Aiden</p>
+      <p>happy moon</p>
     </div>
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <!-- 每一个视频放置的外层的盒子 -->
+          <!-- Video box -->
           <div class="fill">
             <video class="video-box" controls>
-              <!-- src为视频的路径 -->
+              <!-- video src -->
               <source src="./videos/001.mp4" type="video/mp4">
             </video>
 
             <div class="right-setting">
-              <!--头像-->
+              <!--bio photo-->
               <div class="head-image">
                 <img src="./image/head_image/head1.jpg" alt="">
               </div>
 
               <div class="heart mt">
-                <!-- src为小心心的图片路径 -->
+                <!-- heart picture -->
                 <img src="./image/heart.png" onclick="clickHeart()">
-                <!-- p标签的数字为点赞的数量 -->
-                <p>565</p>
+                <!-- number of like -->
+                <p>0</p>
               </div>
-              <!-- 对话 -->
+              <!-- picture of talk -->
               <div class="talk mt">
-                <img src="./image/talk.png">
-                <p>1k</p>
+                <img src="./image/talk.png" onclick="clickTalk()">
+                <p class="talk-num">0</p>
               </div>
             </div>
-          </div>
-          
-        </div>
 
-        <div class="swiper-slide">
-          <div class="fill">
-            <video class="video-box" controls>
-              <source src="./videos/002.mp4" type="video/mp4">
-            </video>
-
-            <div class="right-setting">
-              <!--头像-->
-              <div class="head-image">
-                <img src="./image/head_image/head3.jpg" alt="">
-              </div>
-
-              <div class="heart mt">
-                <img src="./image/heart.png" onclick="clickHeart()">
-                <p>789</p>
-              </div>
-              <!-- 对话 -->
-              <div class="talk mt">
-                <img src="./image/talk.png">
-                <p>1k</p>
+            <!-- comment area -->
+            <div class="talk-box" style="display: none;">
+              <div class="talk-box-inner">
+                <!-- The button that closes the popover弹窗 -->
+                <div class="close-btn" onclick="closeTalk()">×</div>
+                <!-- 评论列表 comment list -->
+                <div class="talk-list">
+                  <!--<div class="talk-list-item">
+                    <p class="text"></p>
+                    <p class="time">2022-12-09</p>
+                  </div>-->
+                </div>
+                <div class="form-item">
+                  <!-- input box -->
+                  <input placeholder="Please leave your comment"/>
+                  <!-- button of send -->
+                  <button onclick="sendMsg()">Send</button>
+                </div>
               </div>
             </div>
           </div>
@@ -84,219 +78,437 @@
             </video>
 
             <div class="right-setting">
-              <!--头像-->
+            
               <div class="head-image">
-                <img src="./image/head_image/head2.jpg" alt="">
+                <img src="./image/head_image/head3.jpg" alt="">
               </div>
 
               <div class="heart mt">
                 <img src="./image/heart.png" onclick="clickHeart()">
-                <p>425</p>
+                <p>1</p>
               </div>
-              <!-- 对话 -->
+             
               <div class="talk mt">
-                <img src="./image/talk.png">
-                <p>1k</p>
+                <img src="./image/talk.png" onclick="clickTalk()">
+                <p class="talk-num">0</p>
+              </div>
+            </div>
+
+           
+            <div class="talk-box" style="display: none;">
+              <div class="talk-box-inner">
+                <div class="close-btn" onclick="closeTalk()">×</div>
+                <div class="talk-list">
+                  <!--<div class="talk-list-item">
+                    <p class="text"></p>
+                    <p class="time">2022-12-09</p>
+                  </div>-->
+                </div>
+                <div class="form-item">
+                  <input placeholder="Please leave your comment"/>
+                  <button onclick="sendMsg()">Send</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <div class="swiper-slide">
-            <div class="fill">
-              <video class="video-box" controls>
-                <source src="./videos/004.mp4" type="video/mp4">
-              </video>
-  
-              <div class="right-setting">
-                <!--头像-->
-                <div class="head-image">
-                  <img src="./image/head_image/head3.jpg" alt="">
-                </div>
-  
-                <div class="heart mt">
-                  <img src="./image/heart.png" onclick="clickHeart()">
-                  <p>758</p>
-                </div>
-                <!-- 对话 -->
-                <div class="talk mt">
-                  <img src="./image/talk.png">
-                  <p>1k</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="fill">
-              <video class="video-box" controls>
-                <source src="./videos/005.mp4" type="video/mp4">
-              </video>
-  
-              <div class="right-setting">
-                <!--头像-->
-                <div class="head-image">
-                  <img src="./image/head_image/head4.jpg" alt="">
-                </div>
-  
-                <div class="heart mt">
-                  <img src="./image/heart.png" onclick="clickHeart()">
-                  <p>658</p>
-                </div>
-                <!-- 对话 -->
-                <div class="talk mt">
-                  <img src="./image/talk.png">
-                  <p>1k</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="fill">
-              <video class="video-box" controls>
-                <source src="./videos/006.mp4" type="video/mp4">
-              </video>
-  
-              <div class="right-setting">
-                <!--头像-->
-                <div class="head-image">
-                  <img src="./image/head_image/head5.jpg" alt="">
-                </div>
-  
-                <div class="heart mt">
-                  <img src="./image/heart.png" onclick="clickHeart()">
-                  <p>856</p>
-                </div>
-                <!-- 对话 -->
-                <div class="talk mt">
-                  <img src="./image/talk.png">
-                  <p>1k</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="fill">
-              <video class="video-box" controls>
-                <source src="./videos/007.mp4" type="video/mp4">
-              </video>
-  
-              <div class="right-setting">
-                <!--头像-->
-                <div class="head-image">
-                  <img src="./image/head_image/head6.jpg" alt="">
-                </div>
-  
-                <div class="heart mt">
-                  <img src="./image/heart.png" onclick="clickHeart()">
-                  <p>854</p>
-                </div>
-                <!-- 对话 -->
-                <div class="talk mt">
-                  <img src="./image/talk.png">
-                  <p>1k</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="fill">
-              <video class="video-box" controls>
-                <source src="./videos/008.mp4" type="video/mp4">
-              </video>
-  
-              <div class="right-setting">
-                <!--头像-->
-                <div class="head-image">
-                  <img src="./image/head_image/head7.jpg" alt="">
-                </div>
-  
-                <div class="heart mt">
-                  <img src="./image/heart.png" onclick="clickHeart()">
-                  <p>1</p>
-                </div>
-                <!-- 对话 -->
-                <div class="talk mt">
-                  <img src="./image/talk.png">
-                  <p>1k</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="fill">
-              <video class="video-box" controls>
-                <source src="./videos/009.mp4" type="video/mp4">
-              </video>
-  
-              <div class="right-setting">
-                <!--头像-->
-                <div class="head-image">
-                  <img src="./image/head_image/head10.jpg" alt="">
-                </div>
-  
-                <div class="heart mt">
-                  <img src="./image/heart.png" onclick="clickHeart()">
-                  <p>789</p>
-                </div>
-                <!-- 对话 -->
-                <div class="talk mt">
-                  <img src="./image/talk.png">
-                  <p>1k</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="fill">
-              <video class="video-box" controls>
-                <source src="./videos/010.mp4" type="video/mp4">
-              </video>
-  
-              <div class="right-setting">
-                <!--头像-->
-                <div class="head-image">
-                  <img src="./image/head_image/head9.jpg" alt="">
-                </div>
-  
-                <div class="heart mt">
-                  <img src="./image/heart.png" onclick="clickHeart()">
-                  <p>1</p>
-                </div>
-                <!-- 对话 -->
-                <div class="talk mt">
-                  <img src="./image/talk.png">
-                  <p>1k</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        <!--<div class="swiper-slide">
           <div class="fill">
             <video class="video-box" controls>
-              <source src="./media/test.mp4" type="video/mp4">
+              <source src="./videos/002.mp4" type="video/mp4">
             </video>
 
             <div class="right-setting">
-              <div class="heart">
+             
+              <div class="head-image">
+                <img src="./image/head_image/head2.jpg" alt="">
+              </div>
+
+              <div class="heart mt">
                 <img src="./image/heart.png" onclick="clickHeart()">
-                <p>2</p>
+                <p>1</p>
+              </div>
+             
+              <div class="talk mt">
+                <img src="./image/talk.png" onclick="clickTalk()">
+                <p class="talk-num">0</p>
+              </div>
+            </div>
+
+           
+            <div class="talk-box" style="display: none;">
+              <div class="talk-box-inner">
+                <div class="close-btn" onclick="closeTalk()">×</div>
+                <div class="talk-list">
+                  <!--<div class="talk-list-item">
+                    <p class="text"></p>
+                    <p class="time">2022-12-09</p>
+                  </div>-->
+                </div>
+                <div class="form-item">
+                  <input placeholder="Please leave your comment"/>
+                  <button onclick="sendMsg()">Send</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>-->
+        </div>
+
+        <div class="swiper-slide">
+          <div class="fill">
+            <video class="video-box" controls>
+              <source src="./videos/004.mp4" type="video/mp4">
+            </video>
+
+            <div class="right-setting">
+            
+              <div class="head-image">
+                <img src="./image/head_image/head4.jpg" alt="">
+              </div>
+
+              <div class="heart mt">
+                <img src="./image/heart.png" onclick="clickHeart()">
+                <p>1</p>
+              </div>
+             
+              <div class="talk mt">
+                <img src="./image/talk.png" onclick="clickTalk()">
+                <p class="talk-num">0</p>
+              </div>
+            </div>
+
+         
+            <div class="talk-box" style="display: none;">
+              <div class="talk-box-inner">
+                <div class="close-btn" onclick="closeTalk()">×</div>
+                <div class="talk-list">
+                  <!--<div class="talk-list-item">
+                    <p class="text"></p>
+                    <p class="time">2022-12-09</p>
+                  </div>-->
+                </div>
+                <div class="form-item">
+                  <input placeholder="Please leave your comment"/>
+                  <button onclick="sendMsg()">Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="fill">
+            <video class="video-box" controls>
+              <source src="./videos/005.mp4" type="video/mp4">
+            </video>
+
+            <div class="right-setting">
+             
+              <div class="head-image">
+                <img src="./image/head_image/head5.jpg" alt="">
+              </div>
+
+              <div class="heart mt">
+                <img src="./image/heart.png" onclick="clickHeart()">
+                <p>1</p>
+              </div>
+              
+              <div class="talk mt">
+                <img src="./image/talk.png" onclick="clickTalk()">
+                <p class="talk-num">0</p>
+              </div>
+            </div>
+
+            
+            <div class="talk-box" style="display: none;">
+              <div class="talk-box-inner">
+                <div class="close-btn" onclick="closeTalk()">×</div>
+                <div class="talk-list">
+                  <!--<div class="talk-list-item">
+                    <p class="text"></p>
+                    <p class="time">2022-12-09</p>
+                  </div>-->
+                </div>
+                <div class="form-item">
+                  <input placeholder="Please leave your comment"/>
+                  <button onclick="sendMsg()">Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="fill">
+            <video class="video-box" controls>
+              <source src="./videos/006.mp4" type="video/mp4">
+            </video>
+
+            <div class="right-setting">
+            
+              <div class="head-image">
+                <img src="./image/head_image/head6.jpg" alt="">
+              </div>
+
+              <div class="heart mt">
+                <img src="./image/heart.png" onclick="clickHeart()">
+                <p>1</p>
+              </div>
+             
+              <div class="talk mt">
+                <img src="./image/talk.png" onclick="clickTalk()">
+                <p class="talk-num">0</p>
+              </div>
+            </div>
+
+            
+            <div class="talk-box" style="display: none;">
+              <div class="talk-box-inner">
+                <div class="close-btn" onclick="closeTalk()">×</div>
+                <div class="talk-list">
+                  <!--<div class="talk-list-item">
+                    <p class="text"></p>
+                    <p class="time">2022-12-09</p>
+                  </div>-->
+                </div>
+                <div class="form-item">
+                  <input placeholder="Please leave your comment"/>
+                  <button onclick="sendMsg()">Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+            <div class="swiper-slide">
+           
+              <div class="fill">
+                <video class="video-box" controls>
+                 
+                  <source src="./videos/003.mp4" type="video/mp4">
+                </video>
+    
+                <div class="right-setting">
+                
+                  <div class="head-image">
+                    <img src="./image/head_image/head3.jpg" alt="">
+                  </div>
+    
+                  <div class="heart mt">
+                 
+                    <img src="./image/heart.png" onclick="clickHeart()">
+               
+                    <p>0</p>
+                  </div>
+                 
+                  <div class="talk mt">
+                    <img src="./image/talk.png" onclick="clickTalk()">
+                    <p class="talk-num">0</p>
+                  </div>
+                </div>
+    
+              
+                <div class="talk-box" style="display: none;">
+                  <div class="talk-box-inner">
+                   
+                    <div class="close-btn" onclick="closeTalk()">×</div>
+                   
+                    <div class="talk-list">
+                      <!--<div class="talk-list-item">
+                        <p class="text"></p>
+                        <p class="time">2022-12-09</p>
+                      </div>-->
+                    </div>
+                    <div class="form-item">
+                      
+                      <input placeholder="Please leave your comment"/>
+                      
+                      <button onclick="sendMsg()">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="fill">
+                <video class="video-box" controls>
+                  <source src="./videos/007.mp4" type="video/mp4">
+                </video>
+    
+                <div class="right-setting">
+                 
+                  <div class="head-image">
+                    <img src="./image/head_image/head7.jpg" alt="">
+                  </div>
+    
+                  <div class="heart mt">
+                    <img src="./image/heart.png" onclick="clickHeart()">
+                    <p>1</p>
+                  </div>
+                
+                  <div class="talk mt">
+                    <img src="./image/talk.png" onclick="clickTalk()">
+                    <p class="talk-num">0</p>
+                  </div>
+                </div>
+    
+                
+                <div class="talk-box" style="display: none;">
+                  <div class="talk-box-inner">
+                    <div class="close-btn" onclick="closeTalk()">×</div>
+                    <div class="talk-list">
+                      <!--<div class="talk-list-item">
+                        <p class="text"></p>
+                        <p class="time">2022-12-09</p>
+                      </div>-->
+                    </div>
+                    <div class="form-item">
+                      <input placeholder="Please leave your comment"/>
+                      <button onclick="sendMsg()">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="fill">
+                <video class="video-box" controls>
+                  <source src="./videos/008.mp4" type="video/mp4">
+                </video>
+    
+                <div class="right-setting">
+                 
+                  <div class="head-image">
+                    <img src="./image/head_image/head8.jpg" alt="">
+                  </div>
+    
+                  <div class="heart mt">
+                    <img src="./image/heart.png" onclick="clickHeart()">
+                    <p>1</p>
+                  </div>
+                  
+                  <div class="talk mt">
+                    <img src="./image/talk.png" onclick="clickTalk()">
+                    <p class="talk-num">0</p>
+                  </div>
+                </div>
+    
+                <div class="talk-box" style="display: none;">
+                  <div class="talk-box-inner">
+                    <div class="close-btn" onclick="closeTalk()">×</div>
+                    <div class="talk-list">
+                      <!--<div class="talk-list-item">
+                        <p class="text"></p>
+                        <p class="time">2022-12-09</p>
+                      </div>-->
+                    </div>
+                    <div class="form-item">
+                      <input placeholder="Please leave your comment"/>
+                      <button onclick="sendMsg()">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide">
+              <div class="fill">
+                <video class="video-box" controls>
+                  <source src="./videos/009.mp4" type="video/mp4">
+                </video>
+    
+                <div class="right-setting">
+                
+                  <div class="head-image">
+                    <img src="./image/head_image/head9.jpg" alt="">
+                  </div>
+    
+                  <div class="heart mt">
+                    <img src="./image/heart.png" onclick="clickHeart()">
+                    <p>1</p>
+                  </div>
+                  
+                  <div class="talk mt">
+                    <img src="./image/talk.png" onclick="clickTalk()">
+                    <p class="talk-num">0</p>
+                  </div>
+                </div>
+    
+            
+                <div class="talk-box" style="display: none;">
+                  <div class="talk-box-inner">
+                    <div class="close-btn" onclick="closeTalk()">×</div>
+                    <div class="talk-list">
+                      <!--<div class="talk-list-item">
+                        <p class="text"></p>
+                        <p class="time">2022-12-09</p>
+                      </div>-->
+                    </div>
+                    <div class="form-item">
+                      <input placeholder="Please leave your comment"/>
+                      <button onclick="sendMsg()">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="fill">
+                <video class="video-box" controls>
+                  <source src="./videos/010.mp4" type="video/mp4">
+                </video>
+    
+                <div class="right-setting">
+               
+                  <div class="head-image">
+                    <img src="./image/head_image/head10.jpg" alt="">
+                  </div>
+    
+                  <div class="heart mt">
+                    <img src="./image/heart.png" onclick="clickHeart()">
+                    <p>1</p>
+                  </div>
+                 
+                  <div class="talk mt">
+                    <img src="./image/talk.png" onclick="clickTalk()">
+                    <p class="talk-num">0</p>
+                  </div>
+                </div>
+    
+               
+                <div class="talk-box" style="display: none;">
+                  <div class="talk-box-inner">
+                    <div class="close-btn" onclick="closeTalk()">×</div>
+                    <div class="talk-list">
+                      <!--<div class="talk-list-item">
+                        <p class="text"></p>
+                        <p class="time">2022-12-09</p>
+                      </div>-->
+                    </div>
+                    <div class="form-item">
+                      <input placeholder="Please leave your comment"/>
+                      <button onclick="sendMsg()">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
       </div>
     </div>
   </div>
 
   <script>
-      // 点击小心心的时候 触发的方法
+      // 点击小心心的时候 触发的方法Trigger method when clicking heart
       function clickHeart() {
           let event = window.e || window.event; // 获取事件对象（兼容写法）
 
@@ -304,29 +516,105 @@
 
           let pDom = event.target.parentNode.getElementsByTagName("p")[0]; // 获取P节点，要改变数值
 
-          if (src.indexOf("_active") > -1) { // 有包含 “_active”字符串的 说明是已经点亮的了
-              event.target.src = "./image/heart.png"; // 换成灰色的心心
-              pDom.innerText = Number(pDom.innerText) - 1; // P 标签的数字减1
+          if (src.indexOf("_active") > -1) { // 有包含 “_active”字符串的 说明是已经点亮的了A note that contains the "_active" string is already lit
+              event.target.src = "./image/heart.png"; // 换成灰色的心心Replace it with a gray heart
+              pDom.innerText = Number(pDom.innerText) - 1; // P 标签的数字减1Subtract 1 from the number of the P label
           } else { // 没有点亮的
-              event.target.src = "./image/heart_active.png"; // 换成红色的心心
-              pDom.innerText = Number(pDom.innerText) + 1; // P 标签的数字加1
+              event.target.src = "./image/heart_active.png"; // 换成红色的心心 Change it to a red heart
+              pDom.innerText = Number(pDom.innerText) + 1; // P 标签的数字加1The number of the P tag is increased by 1
           }
       }
 
+      // 点击弹出评论框Click on the pop-up comment box
+      function clickTalk() {
+          let event = window.e || window.event;
+
+          // 拿到评论弹窗的DOM节点Get the DOM node of the comment popover
+          let talkBoxDom = event.target.parentNode.parentNode.parentNode.getElementsByClassName("talk-box")[0];
+
+          // 显示弹窗Display popover
+          talkBoxDom.style.display = "block";
+      }
+
+      function closeTalk() {
+          let event = window.e || window.event;
+
+          // 拿到评论弹窗的DOM节点Get the DOM node of the comment popover
+          let talkBoxDom = event.target.parentNode.parentNode;
+
+          // 隐藏弹窗Hide the popover
+          talkBoxDom.style.display = "none";
+      }
+
+      function addZero(val) {
+         
+          return Number(val) < 10 ? `0${val}` : val;
+      }
+
+      // 获取日期Acquisition date（YYYY-MM-DD hh:mm:ss）
+      function getTime() {
+          let date = new Date(); // 获取日期对象Getting a date object
+
+          let year = date.getFullYear();
+          let month = addZero(date.getMonth() + 1); 
+          let day = addZero(date.getDate());
+          let hour = addZero(date.getHours());
+          let minute = addZero(date.getMinutes());
+          let second = addZero(date.getSeconds());
+
+          return `${year}-${month}-${day} ${hour}:${minute}:${second}`;
+      }
+
+      // 发送信息Sending a message
+      function sendMsg() {
+          let event = window.e || window.event;
+          // 获取输入框的值Gets the value of the input box
+          let value = event.target.parentNode.getElementsByTagName("input")[0].value;
+
+          // 为空的时候 要提示，不能发送Prompt if it is empty, cannot be sent
+          if (!value) {
+              alert("inter the content");
+              return;
+          }
+
+          let time = getTime(); // 获取评论的时间Time to get comments（YYYY-MM-DD hh:mm:ss）
+
+          let div = document.createElement("div"); // 创造一个DIV节点Create a DIV node
+
+          div.classList.add("talk-list-item") // 将div的类名 增加 talk-list-item
+
+          // 设置div的内容 评论内容 + 时间Set the div's content comment content + time
+          div.innerHTML = `
+              <p class="text">${value}</p>
+              <p class="time">${time}</p>
+          `;
+
+          // 获取评论列表的DOM 节点Gets the DOM node for the comment list
+          let parentNode = event.target.parentNode.parentNode.getElementsByClassName("talk-list")[0]
+
+          parentNode.appendChild(div); // 将刚刚创造的div放到 评论列表中Put the div just created into the comment list
+          event.target.parentNode.getElementsByTagName("input")[0].value = ""; // 评论成功后，将输入框的值置空When the comment is successful, empty the value of the input box
+
+          // 获取评论数量的节点Node to get the number of comments
+          let numDom = event.target.parentNode.parentNode.parentNode.parentNode.getElementsByClassName("talk-num")[0];
+          // 评论成功了，数量要加1The review is successful. to increase the number by one
+          numDom.innerText = Number(numDom.innerText) + 1;
+      }
+
       var mySwiper = new Swiper(".swiper", {
-          direction: "vertical", // 将轮播的方向 改为竖直
-          autoplay: false, // 是否自动滑动
-          loop: true, // 是否循环轮播
-          mousewheel: true, // 是否鼠标滑轮可控制
+          direction: "vertical", // 将轮播的方向 改为竖直Change the direction of the wheel cast to vertical
+          autoplay: false, // 是否自动滑动Automatic sliding or not
+          loop: true, // 是否循环轮播Whether to cycle or not
+          mousewheel: true, // 是否鼠标滑轮可控制Whether the mouse pulley can be controlled
           on: {
-              // 监听轮播切换的动作，然后将目前有在播放的视频暂停暂停
+              // 监听轮播切换的动作，然后将目前有在播放的视频暂停暂停rotation switch, and then pause the video that is currently playing
               slideChange: function () {
-                  // realIndex 当前显示轮播的下标索引（0表示第一张）
+                  // realIndex 当前显示轮播的下标索引（0表示第一张）Index of the subscript that currently displays the wheel cast (0 represents the first one)
                   // console.log(this.realIndex);
 
                   let videoList = document.getElementsByClassName("video-box");
                   for (let i = 0; i < videoList.length; i++) {
-                      videoList[i].pause(); // 将目前所有的视频播放 都暂停
+                      videoList[i].pause(); // 将目前所有的视频播放 都暂停 Pause all current videos
                   }
               }
           }

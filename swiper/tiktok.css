@@ -1,83 +1,146 @@
-/* tiktok css */
-
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  html {
-    background-color: rgb(0, 0, 0);
-  }
-  
-  .logo{
-    width: 30px;
-    cursor: pointer;
-    float: left;
-    z-index: 999;
+  margin: 0;
+  padding: 0;
 }
 
-  .logo image{
-    width: 20%;
-    z-index: 999;
+html {
+  background-color: #333;
 }
-  .outer-wrap {
-    position: relative;
-  }
-  
-  .author {
-    position: fixed;
-    left: 20px;
-    bottom: 20px;
-  }
-  
-  .author p {
-    color: #fff;
-  
-  }
-  
-  .swiper {
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  .fill {
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-  }
-  .fill .right-setting {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .fill .right-setting img {
-    width: 32px;
-    cursor: pointer;
-    display: block;
-  }
-  .fill .right-setting .head-image img {
-    width: 56px;
-    border-radius: 100%;
-    margin: 0 auto;
-    border: 2px solid #f4f4f4;
-  }
-  .fill .right-setting p {
-    color: #fff;
-    font-size: 14px;
-    text-align: center;
-  }
-  .fill .right-setting .mt {
-    margin-top: 20px;
-  }
-  .video-box {
-    height: 100vh;
-    width: auto;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  
+
+.outer-wrap {
+  position: relative;
+}
+.logo {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 2; /* 要讲层级调高，因为swiper的z-index为1，所以要将logo的z-index改为比1大，才可以触发点击 */
+}
+
+.author {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+}
+
+.author p {
+  color: #fff;
+
+}
+
+.swiper {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.fill .right-setting {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fill .right-setting img {
+  width: 32px;
+  cursor: pointer;
+  display: block;
+}
+.fill .right-setting .head-image img {
+  width: 56px;
+  border-radius: 100%;
+  margin: 0 auto;
+  border: 2px solid #f4f4f4;
+}
+.fill .right-setting p {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+.fill .right-setting .mt {
+  margin-top: 20px;
+}
+.video-box {
+  height: 100vh;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  position: relative;
+}
+.swiper-slide .talk-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 2;
+  border-radius: 10px 10px 0 0;
+  /*display: none;*/
+}
+.talk-box-inner {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.talk-box-inner .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.talk-box-inner .form-item {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.talk-box-inner .form-item input {
+  flex-grow: 1;
+  height: 30px;
+  outline: none;
+  text-indent: 15px;
+  border: 1px solid #666;
+  margin-right: 20px;
+}
+.talk-box-inner .form-item button {
+  height: 30px;
+  width: 60px;
+  background: #007aff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.talk-box-inner .talk-list {
+  max-height: 230px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.talk-box-inner .talk-list-item {
+  margin-bottom: 10px;
+}
+.talk-list-item .text {
+  font-size: 14px;
+  color: #333;
+}
+.talk-list-item .time {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
