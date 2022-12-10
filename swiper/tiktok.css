@@ -14,7 +14,7 @@ html {
   position: fixed;
   left: 20px;
   top: 20px;
-  z-index: 2; /* 要讲层级调高，因为swiper的z-index为1，所以要将logo的z-index改为比1大，才可以触发点击 */
+  z-index: 2; 
 }
 
 .author {
